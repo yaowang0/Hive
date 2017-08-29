@@ -7,6 +7,7 @@ Hive中metastore元数据存储的三种方式：<br>
 ##### 本地Derby
 cp hive-default.xml.template hive-site.xml<br>
 vim hive-site.xml<br>
+```
 <?xml version="1.0"?>  
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>  
   
@@ -31,6 +32,7 @@ vim hive-site.xml<br>
   <value>/user/hive/warehouse</value>  
 </property>  
 </configuration>
+```
 
 注：使用derby存储方式时，运行hive会在当前目录生成一个derby文件和一个metastore_db目录。这种存储方式的弊端是在同一个目录下同时只能有一个hive客户端能使用数据库，否则会提示如下错误<br>
 [html] view plaincopyprint?<br>
