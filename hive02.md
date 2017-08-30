@@ -29,7 +29,7 @@ vim hive-site.xml<br>
    
 <property>  
   <name>hive.metastore.warehouse.dir</name>  
-  <value>/user/hive/warehouse</value>  
+  <value>/user/hive/warehouse</value>  <!-- 存储在hdfs的路径 -->
 </property>  
 </configuration>
 ```
