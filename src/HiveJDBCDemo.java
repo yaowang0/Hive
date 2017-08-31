@@ -1,10 +1,9 @@
 import java.sql.*;
 
 /**
- * hiveserver2在命令行操作和hive没区别
- * 测试hiveserver2连接JDBC
+ *
  */
-public class Test {
+public class HiveJDBCDemo {
     public static void main(String[] args) throws SQLException {
         try {
             Class.forName("org.apache.jdbc.HiveDriver");
